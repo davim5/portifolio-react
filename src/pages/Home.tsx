@@ -1,11 +1,55 @@
+import { useEffect, useState } from 'react';
 import {FaHtml5,FaCss3Alt,FaJsSquare,FaReact,FaGitAlt,FaFileDownload ,FaSass, FaBootstrap } from 'react-icons/fa'
 import {SiTypescript} from 'react-icons/si';
 import { DownloadButton, HomeContainer, ProjectList, TechList } from './Home.styles'
 
 export function Home() {
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting,setIsDeleting] = useState(false);
+
+    const toRotate = ["Davi Lima", "Dev Lima", "Dav Lima"];
+    const [text, setText] = useState('');
+    const [input , setInput] = useState(['|','']);
+    const [delta, setDelta] = useState(300 - Math.random() * 100);
+
+    // Time between deleting;
+    const period = 2000; // 2 seconds
+
+    const tick = () => {
+        let index = loopNum % toRotate.length;
+        let fullText = toRotate[index];
+        let updatedText = isDeleting ? 
+        fullText.substring(0, text.length - 1) :
+        fullText.substring(0, text.length + 1)
+
+        setText(updatedText);
+
+        if(isDeleting) {
+            setDelta(state => state/2);
+        }
+
+        if(!isDeleting && updatedText === fullText) {
+            setIsDeleting(true);
+            setDelta(period);
+        }
+        else if(isDeleting && updatedText === '') {
+            setIsDeleting(false);
+            setLoopNum(loopNum + 1);
+            setDelta(500);
+        }
+    }
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        },delta)
+
+        return () => { clearInterval(ticker)}
+    },[text])
+
     return (
         <HomeContainer>     
-            <h1>Olá, eu sou o Davi Lima</h1>
+            <h1>Olá, eu sou o {text}|</h1>
             <p>
             Sou de Fortaleza, Ceará. Adoro computação e tudo
             relacionado à tecnologia. Desde meus 18 anos, que foi quando conheci a 
