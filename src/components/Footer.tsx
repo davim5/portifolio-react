@@ -33,12 +33,8 @@ export function Footer() {
         temperature: res.data.main.temp.toFixed(1),
         sky: res.data.weather[0].description,
       };
-      console.log(formatedWeather);
-
       setWeather(formatedWeather);
     });
-    console.log(navigator.geolocation.getCurrentPosition);
-
   },[])
   
   const formatedTime = format(time,'pppp');
