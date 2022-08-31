@@ -1,11 +1,25 @@
+import { format } from 'date-fns';
 import {GithubLogo, LinkedinLogo } from 'phosphor-react';
+import { useEffect, useState } from 'react';
 import { FooterContainer } from './Footer.styles';
 
 export function Footer() {
+    const [time,setTime] = useState(Date.now());
+
+    useEffect(() => {
+      let timer = setInterval(() => {
+         setTime(Date.now()); 
+      },1000);
+
+      return () => {clearInterval(timer)}
+  },[time]);
+
+  const formatedTime = format(time,'pppp');
+
     return (
         <FooterContainer>
           <div className='status'>
-            <span>22:12:14</span>
+            <span>{formatedTime}</span>
             <span>19°C • Rain • 1.54 km/h</span>
           </div>
           <div className='social'>

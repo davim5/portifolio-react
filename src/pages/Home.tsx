@@ -5,7 +5,7 @@ import { DownloadButton, HomeContainer, ProjectList, TechList } from './Home.sty
 
 export function Home() {
     const [loopNum, setLoopNum] = useState(0);
-    const [isDeleting,setIsDeleting] = useState(false);
+    const [isDeleting, setIsDeleting] = useState(false);
 
     const toRotate = ["Davi Lima", "Dev Lima", "Dav Lima"];
     const [text, setText] = useState('');
@@ -39,13 +39,12 @@ export function Home() {
         }
     }
 
-
     const blink = () => {
         let newInput = input === "" ? '|' : "";
         setInput(newInput);
-        console.log(newInput);
     }
 
+    // Delete and rewrite text
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
@@ -54,6 +53,7 @@ export function Home() {
         return () => {clearInterval(ticker)}
     },[text])
 
+    // Blink the "|" character
     useEffect(() => {
         let blinker = setInterval(() => {
             blink();
@@ -73,7 +73,15 @@ export function Home() {
             fiz cursos e bootcamps por fora e hoje atuo feliz nessa área que me desafia
             a cada dia.
             </p>
-            <p> Fora isso, adoro viajar, pratico kung fu e qualquer tipo de música me balança.</p>
+            <p>
+            Já estudei e trabalhei em backend com NodeJs, mas hoje meu maior foco é no front 
+            em que venho utilizando React e TypeScript. Também pretendo voltar a usar 
+            React Native e me enveredar pelas áreas do "mundo mobile".
+            </p>
+            <p>
+            Fora isso, adoro viajar, pratico Kung Fu, gosto muito de rock, mas a maioria dos estilos
+            de música me agradam.
+            </p>
 
             <DownloadButton><a download='../../public/Currículo_Davi_Lima_ReactJs_2022_08.pdf' target={'_self'} href="../../public/Currículo_Davi_Lima_ReactJs_2022_08.pdf">Currículo <FaFileDownload size={18}/></a></DownloadButton>
 
