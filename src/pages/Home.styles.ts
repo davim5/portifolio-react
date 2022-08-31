@@ -37,7 +37,10 @@ export const HomeContainer = styled.div`
 
 export const TechList = styled.div`
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
     gap: 2rem;
 
@@ -57,6 +60,9 @@ export const TechList = styled.div`
 
 export const ProjectList = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
 
     margin-bottom: 1rem;
