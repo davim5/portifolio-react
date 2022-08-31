@@ -133,11 +133,11 @@ export function Home() {
                 </a>
                 <a href="#">
                     <span>
-                        <img src="https://cdn.dribbble.com/users/31260/screenshots/465048/website.jpg" alt="Blue print image" />
+                        <img src="src/assets/print_dtmoney.png" alt="Blue print image" />
                     </span>
                     <div>
-                        <h3>Em andamento 🛑</h3>
-                        <span>Projeto que ainda será agregado aqui</span>
+                        <h3>Dt Money ↗️</h3>
+                        <span>Simples gerenciador de despesas e receitas.</span>
                     </div>
                 </a>
                 <a href="#">
