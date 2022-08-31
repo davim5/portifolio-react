@@ -9,10 +9,10 @@ export function Footer() {
             <span>19°C • Rain • 1.54 km/h</span>
           </div>
           <div className='social'>
-            <button><GithubLogo size={32} /></button>
-            <button><LinkedinLogo size={32} /></button>
+            <a href='https://github.com/davim5'><GithubLogo size={32} /></a>
+            <a href='https://www.linkedin.com/in/davilima5/'><LinkedinLogo size={32} /></a>
           </div>
-          <span>© Davi Lima 2022. Website built using React (source code)</span>
+          <span>© Davi Lima 2022. Website built using React <a href="https://github.com/davim5/portifolio-react">(source code)</a></span>
         </FooterContainer>
     )
 }

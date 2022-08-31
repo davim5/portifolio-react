@@ -5,6 +5,7 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
 
     span {
+        margin-top: 1.25rem;
         color: ${props => props.theme["gray-400"]};
     }
 
@@ -22,6 +23,19 @@ export const FooterContainer = styled.footer`
         display: flex;
         flex-direction: row;
       
+    }
+
+    a {
+        border-radius: 4px;
+        text-decoration: none;
+        color: ${props=>props.theme["yellow-100"]};
+        
+        &:hover {
+            box-shadow: 
+            0 0 .4em #FAF1CF8f, 
+            inset 0 0 1em #FAF1CF6f;
+        }
+        transition: box-shadow .4s ease-in-out;
     }
     
     button {

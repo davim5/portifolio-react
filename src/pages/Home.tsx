@@ -5,9 +5,9 @@ import { DownloadButton, HomeContainer, ProjectList, TechList } from './Home.sty
 export function Home() {
     return (
         <HomeContainer>     
-            <h1>Olá, eu sou o Dev Lima</h1>
+            <h1>Olá, eu sou o Davi Lima</h1>
             <p>
-            Olá, me chamo Davi Lima, sou de Fortaleza, Ceará. Adoro computação e tudo
+            Sou de Fortaleza, Ceará. Adoro computação e tudo
             relacionado à tecnologia. Desde meus 18 anos, que foi quando conheci a 
             programção no curso de engenharia civil, soube que aquilo era pra mim. 
             Desde então me dedico a isso: mudei de curso para Ciência da Computação,
@@ -66,20 +66,29 @@ export function Home() {
                 </a>
                 <a href="#">
                     <span>
-                        <img src="https://raw.githubusercontent.com/davim5/Pokedex-React-Virtual/master/images/print_today.png" alt="Pokedex React" />
+                        <img src="https://cdn.dribbble.com/users/31260/screenshots/465048/website.jpg" alt="Blue print image" />
                     </span>
                     <div>
-                        <h3>Pokedex React ↗️</h3>
-                        <span>Pokedex feita com typescript e react usando a pokeapi</span>
+                        <h3>Está por vir 🛑</h3>
+                        <span>Projeto que ainda será agregado aqui</span>
                     </div>
                 </a>
                 <a href="#">
                     <span>
-                        <img src="https://raw.githubusercontent.com/davim5/Pokedex-React-Virtual/master/images/print_today.png" alt="Pokedex React" />
+                        <img src="https://cdn.dribbble.com/users/31260/screenshots/465048/website.jpg" alt="Blue print image" />
                     </span>
                     <div>
-                        <h3>Pokedex React ↗️</h3>
-                        <span>Pokedex feita com typescript e react usando a pokeapi</span>
+                        <h3>Está por vir 🛑</h3>
+                        <span>Projeto que ainda será agregado aqui</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <span>
+                        <img src="https://cdn.dribbble.com/users/31260/screenshots/465048/website.jpg" alt="Blue print image" />
+                    </span>
+                    <div>
+                        <h3>Está por vir 🛑</h3>
+                        <span>Projeto que ainda será agregado aqui</span>
                     </div>
                 </a>
             </ProjectList>

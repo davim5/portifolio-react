@@ -24,7 +24,7 @@ export const HomeContainer = styled.div`
     p {
         font-family: 'Inter',sans-serif;
         line-height: 2;
-        width: 50%;
+        width: 80%;
         align-self: start;
 
        margin-bottom: 2rem;
