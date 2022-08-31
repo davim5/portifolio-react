@@ -9,7 +9,7 @@ export function Home() {
 
     const toRotate = ["Davi Lima", "Dev Lima", "Dav Lima"];
     const [text, setText] = useState('');
-    const [input , setInput] = useState(['|','']);
+    const [input , setInput] = useState('|');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
 
     // Time between deleting;
@@ -39,17 +39,32 @@ export function Home() {
         }
     }
 
+
+    const blink = () => {
+        let newInput = input === "" ? '|' : "";
+        setInput(newInput);
+        console.log(newInput);
+    }
+
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
         },delta)
 
-        return () => { clearInterval(ticker)}
+        return () => {clearInterval(ticker)}
     },[text])
+
+    useEffect(() => {
+        let blinker = setInterval(() => {
+            blink();
+        },500)
+
+        return () => {clearInterval(blinker)}
+    },[input])
 
     return (
         <HomeContainer>     
-            <h1>Olá, eu sou o {text}|</h1>
+            <h1>Olá, eu sou o {text}{input}</h1>
             <p>
             Sou de Fortaleza, Ceará. Adoro computação e tudo
             relacionado à tecnologia. Desde meus 18 anos, que foi quando conheci a 
@@ -113,7 +128,7 @@ export function Home() {
                         <img src="https://cdn.dribbble.com/users/31260/screenshots/465048/website.jpg" alt="Blue print image" />
                     </span>
                     <div>
-                        <h3>Está por vir 🛑</h3>
+                        <h3>Em andamento 🛑</h3>
                         <span>Projeto que ainda será agregado aqui</span>
                     </div>
                 </a>
@@ -122,7 +137,7 @@ export function Home() {
                         <img src="https://cdn.dribbble.com/users/31260/screenshots/465048/website.jpg" alt="Blue print image" />
                     </span>
                     <div>
-                        <h3>Está por vir 🛑</h3>
+                        <h3>Em andamento 🛑</h3>
                         <span>Projeto que ainda será agregado aqui</span>
                     </div>
                 </a>
@@ -131,7 +146,7 @@ export function Home() {
                         <img src="https://cdn.dribbble.com/users/31260/screenshots/465048/website.jpg" alt="Blue print image" />
                     </span>
                     <div>
-                        <h3>Está por vir 🛑</h3>
+                        <h3>Em andamento 🛑</h3>
                         <span>Projeto que ainda será agregado aqui</span>
                     </div>
                 </a>
