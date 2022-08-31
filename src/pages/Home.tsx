@@ -133,7 +133,7 @@ export function Home() {
                 </a>
                 <a href="#">
                     <span>
-                        <img src="src/assets/print_dtmoney.png" alt="Blue print image" />
+                        <img src="https://github.com/davim5/portifolio-react/blob/master/src/assets/print_dtmoney.png?raw=true" alt="Blue print image" />
                     </span>
                     <div>
                         <h3>Dt Money ↗️</h3>
