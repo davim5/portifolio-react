@@ -83,7 +83,7 @@ export function Home() {
             de música me agradam.
             </p>
 
-            <DownloadButton><a download='https://github.com/davim5/portifolio-react/blob/a731217f2adb92a2095ea8b76bdd6e4bab13b88e/public/Curr%C3%ADculo_Davi_Lima_ReactJs_2022_08.pdf' target={'_self'} href="../../public/Currículo_Davi_Lima_ReactJs_2022_08.pdf">Currículo <FaFileDownload size={18}/></a></DownloadButton>
+            <DownloadButton><a download='https://github.com/davim5/portifolio-react/raw/master/public/Curr%C3%ADculo_Davi_Lima_ReactJs_2022_08.pdf' target={'_self'} href="../../public/Currículo_Davi_Lima_ReactJs_2022_08.pdf">Currículo <FaFileDownload size={18}/></a></DownloadButton>
 
             <h2>Tecnologias</h2>
             <TechList>
