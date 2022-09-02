@@ -83,7 +83,7 @@ export function Home() {
             de música me agradam.
             </p>
 
-            <DownloadButton><a download='../../public/Currículo_Davi_Lima_ReactJs_2022_08.pdf' target={'_self'} href="../../public/Currículo_Davi_Lima_ReactJs_2022_08.pdf">Currículo <FaFileDownload size={18}/></a></DownloadButton>
+            <DownloadButton><a download='https://github.com/davim5/portifolio-react/blob/a731217f2adb92a2095ea8b76bdd6e4bab13b88e/public/Curr%C3%ADculo_Davi_Lima_ReactJs_2022_08.pdf' target={'_self'} href="../../public/Currículo_Davi_Lima_ReactJs_2022_08.pdf">Currículo <FaFileDownload size={18}/></a></DownloadButton>
 
             <h2>Tecnologias</h2>
             <TechList>
@@ -131,22 +131,22 @@ export function Home() {
                         <span>Pokedex feita com typescript e react usando a pokeapi</span>
                     </div>
                 </a>
-                <a href="#">
+                <a href="https://github.com/davim5/dtmoney-React">
                     <span>
                         <img src="https://github.com/davim5/portifolio-react/blob/master/src/assets/print_dtmoney.png?raw=true" alt="Blue print image" />
                     </span>
                     <div>
                         <h3>Dt Money ↗️</h3>
-                        <span>Simples gerenciador de despesas e receitas.</span>
+                        <span>Simples gerenciador de transações.</span>
                     </div>
                 </a>
-                <a href="#">
+                <a href="https://random-heatmap-generator.vercel.app">
                     <span>
-                        <img src="https://cdn.dribbble.com/users/31260/screenshots/465048/website.jpg" alt="Blue print image" />
+                        <img src="https://github.com/davim5/Random-Heatmap-Generator/blob/master/images/print_today.png?raw=true" alt="Blue print image" />
                     </span>
                     <div>
-                        <h3>Em andamento 🛑</h3>
-                        <span>Projeto que ainda será agregado aqui</span>
+                        <h3>Heatmap Generator ↗️</h3>
+                        <span>Gerador de mapas de calor aleatórios.</span>
                     </div>
                 </a>
                 <a href="#">
